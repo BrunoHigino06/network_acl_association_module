@@ -1,7 +1,6 @@
-variable "network_acl_association" {
- type = map(any)
-  default = {
-    subnet_id  = ""
-    networkAcl_id = ""
-  }
+variable "subnet_name_association" {
+  type = list(string)
+}
+variable "networkAcl_name_association" {
+  type = list(string)
 }
